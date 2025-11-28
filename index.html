@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task22</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal">
+            <div class="modal-close" id="modalClose">×</div>
+            <h3>Оставить заявку</h3>
+            <form class="modal-form">
+                <input type="text" placeholder="Ваше имя" required>
+                <input type="tel" placeholder="Ваш телефон" required>
+                <input type="email" placeholder="Ваш email">
+                <textarea placeholder="Сообщение"></textarea>
+                <button type="submit">Отправить</button>
+            </form>
+        </div>
+    </div>
+
+    <header>
+        <div class="mobile-logo">
+            <img src="img/header/Logo.svg" alt="logo">
+        </div>
+        
+        <div class="mobile-chair">
+            <img src="img/header/chairHeader.svg" alt="chair">
+        </div>
+
+        <div class="mobile-text">
+            <div class="title">
+                Изготовление мебели 
+                из натурального дерева 
+                на собственном производстве
+            </div>
+            <div class="subtitle">
+                Любая мебель по вашим пожеланиям из чисто экологичных материалов 
+            </div>
+        </div>
+
+        <div class="mobile-submit" id="mobileSubmit">
+            Оставить заявку
+        </div>
+
+        <div class="triangl">
+            <div class="iformation">
+                <div class="img desktop-logo">
+                    <img src="img/header/Logo.svg" alt="logo">
+                </div>
+                <div class="title">
+                    Изготовление мебели 
+                    из натурального дерева 
+                    на собственном производстве
+                </div>
+                <div class="subtitle">
+                    Любая мебель по вашим пожеланиям из чисто экологичных материалов 
+                </div>  
+                <div class="strelka">
+                    <div class="submit" id="desktopSubmit">
+                        <p>Оставить заявку</p>
+                    </div>
+                    <div class="subtext">
+                        От идеи до реализации один шаг
+                    </div>
+                </div>
+                <img class="str" src="img/header/strelka.svg" alt="strelka">
+            </div>
+        </div>
+        
+        <div class="chair"></div>
+    </header>
+
+    <main>
+        <div class="screen1">
+            <div class="contacts">
+                <div class="phone">+7 (777) 777 77</div>
+                <div class="email">manufacturing@gmail.com</div>
+                <div class="img">
+                    <img src="img/main/screen1/insta.svg" alt="insta">
+                </div>
+                <div class="submit" id="contactsSubmit">
+                    <p>Оставить заявку</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="screen2and3">
+            <div class="img"></div>
+            <div class="title">Наши воплощённые идеи</div>
+            <div class="text">
+                Это текст-"рыба", часто используемый в печати 
+                и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века
+            </div>
+            
+            <div class="slider-container">
+                <div class="slider-track">
+                    <div class="slide small-left" data-index="0">
+                        <img src="img/main/screen1/kitch1.svg" alt="kitch1">
+                    </div>
+                    <div class="slide main active" data-index="1">
+                        <img src="img/main/screen1/kitch2.svg" alt="kitch2">
+                    </div>
+                    <div class="slide small-right" data-index="2">
+                        <img src="img/main/screen1/kitch3.svg" alt="kitch3">
+                    </div>
+                    <div class="slide small-right" data-index="3">
+                        <img src="img/main/screen1/kitch4.svg" alt="kitch4">
+                    </div>
+                </div>
+                
+                <div class="slider-controls">
+                    <button class="slider-btn prev-btn">←</button>
+                    <button class="slider-btn next-btn">→</button>
+                </div>
+                
+                <div class="create">Создание мебели для кухни</div>
+            </div>
+        </div>
+
+        <div class="screen4">
+            <div class="triangl"></div>
+            <div class="title">
+                Собственый конструкторский отдел и производство
+            </div>
+            <div class="otdel">
+                <span>— </span>Отделы
+            </div>
+            <div class="otdeli">
+                <div class="proizv">Производства</div>
+                <div class="client">Работы с клиентами</div>
+                <div class="client">Конструкторский </div>
+            </div>
+            <div class="ourparty one">
+                <div class="slider">
+                    <div class="img1"><div><span>Вадим Кромельников<br>Старший инженер</span></div> </div>
+                    <div class="img3"><div><span>Вадим Кромельников<br>Старший инженер</span></div> </div>
+                    <div class="img1"><div><span>Вадим Кромельников<br>Старший инженер</span></div></div>
+                </div>
+                <div class="ourcomand one">
+                    <div class="comand"><span>— </span>Наша команда</div>
+                    <div class="text">
+                        Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться а также реальное распределение букв 
+                        и пробелов в абзацах, которое не получается при простой дубликации
+                    </div>
+                </div>
+            </div>
+            <div class="ourparty two">
+                <div class="ourcomand two">
+                    <div class="comand"><span>— </span>Наше оборудование</div>
+                    <div class="text">
+                        Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться а также реальное распределение букв 
+                        и пробелов в абзацах, которое не получается при простой дубликации
+                    </div>
+                </div>
+                <div class="slider">
+                    <div class="img2"><div><span>Деревообробатывающий станок</span></div></div>
+                    <div class="img5"><div><span>Деревообробатывающий станок</span></div></div>
+                    <div class="img4"><div><span>Деревообробатывающий станок</span></div></div>   
+                </div>
+            </div>
+        </div>
+
+        <div class="screen5">
+            <div class="male">
+                <div class="imgmen"><img src="img/main/screen3/men.svg" alt="menimg"></div>
+            </div>
+            <div class="text">
+                <div class="title">Преимущество работы с нами</div>
+                <div class="kachvowork">
+                Лучшее качество работы
+                </div>
+                <div class="subtext">
+                    Есть много вариантов Lorem Ipsum, 
+                    но большинство из них имеет не всегда приемлемые модификации, например
+                </div>
+                <div class="naznachitvstr">
+                    Назначить встречу
+                </div>
+            </div>
+        </div>
+
+        <div class="screen6">
+            <div class="title">
+                Мы проделали большую работу и отобрали лучшие материалы и фурнитуру
+            </div>
+            <div class="box">
+                <div class="plsui">
+                    <div class="plsui-item">
+                        <img src="img/main/screen4/icon/srokiproi.svg" alt="">
+                        <div class="text">Сроки производства от 60 дней</div>
+                    </div>
+                    <div class="plsui-item">
+                        <img src="img/main/screen4/icon/ekolog.svg" alt="">
+                        <div class="text">Экологичные и безопасные материалы и комплектующие</div>
+                    </div>
+                    <div class="plsui-item">
+                        <img src="img/main/screen4/icon/garanti.svg" alt="">
+                        <div class="text">Гарантии от 1 года</div>
+                    </div>
+                    <div class="plsui-item">
+                        <img src="img/main/screen4/icon/ispolnrabot.svg" alt="">
+                        <div class="text">Исполнения самых нестандартных работ</div>
+                    </div>
+                </div>
+                <div class="gridwood">
+                    <div class="grid-item">
+                        <div class="image-container">
+                            <img src="img/main/screen4/wood1.svg" alt="МДФ">
+                            <div class="material-overlay">
+                                <p class="material-name">МДФ</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-item">
+                        <div class="image-container">
+                            <img src="img/main/screen4/wood2.svg" alt="ЛДСП">
+                            <div class="material-overlay">
+                                <p class="material-name">ЛДСП</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-item">
+                        <div class="image-container">
+                            <img src="img/main/screen4/wood3.svg" alt="Массив">
+                            <div class="material-overlay">
+                                <p class="material-name">Массив</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-item">
+                        <div class="image-container">
+                            <img src="img/main/screen4/wood4.svg" alt="Шпон">
+                            <div class="material-overlay">
+                                <p class="material-name">Шпон</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-item">
+                        <div class="image-container">
+                            <img src="img/main/screen4/wood5.svg" alt="Металл">
+                            <div class="material-overlay">
+                                <p class="material-name">Металл</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-item">
+                        <div class="image-container">
+                            <img src="img/main/screen4/wood6.svg" alt="Фрезеровка">
+                            <div class="material-overlay">
+                                <p class="material-name">Фрезеровка</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="screen7">
+            <div class="title">
+                Мы отвечаем за качество, надежность, безопасность и экологичность всех используемых материалов и комплектующих
+            </div>
+            <div class="block r">
+                <div class="text">
+                    <div class="titlesub">
+                        <span>—</span>Доставка и монтаж
+                    </div>
+                    <div class="text1">Это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов</div>
+                </div>
+                <div class="img">
+                    <img src="img/main/screen5/deliveri.svg" alt="deliveri">
+                </div>
+            </div>
+            <div class="block l">
+                <div class="img">
+                    <img src="img/main/screen5/garanti.svg" alt="garanty">        
+                </div>
+                <div class="text">
+                    <div class="titlesub">
+                        <span>—</span>Гарантии
+                    </div>
+                    <div class="text1">Это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="screen8">
+            <div class="title">С нами на постоянной основе работают дизайнеры и компании</div>
+            <div class="partners-container">
+                <div class="partner-line first-line">
+                    <div class="partner-item">
+                        <img src="img/main/screen6/kaif.svg" alt="Kaif">
+                    </div>
+                    <div class="partner-item">
+                        <img src="img/main/screen6/greenatom.svg" alt="Green Atom">
+                    </div>
+                    <div class="partner-item">
+                        <img src="img/main/screen6/hunter.svg" alt="Hunter">
+                    </div>
+                    <div class="partner-item">
+                        <img src="img/main/screen6/kapitan.svg" alt="Kapitan">
+                    </div>
+                </div>
+                <div class="partner-line second-line">
+                    <div class="partner-item">
+                        <img src="img/main/screen6/eltex.svg" alt="Eltex">
+                    </div>
+                    <div class="partner-item">
+                        <img src="img/main/screen6/politeh.svg" alt="Politeh">
+                    </div>
+                    <div class="partner-item">
+                        <img src="img/main/screen6/simon.svg" alt="Simon">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="screen9">
+            <div class="title1">
+                Мы имеем большой опыт в изготовлении нестандартной мебели
+            </div>
+            <div class="kartochki">
+                <div class="tap">
+                    <div class="icon1"><img src="img/main/screen7/home.svg" alt=""></div>
+                    <div class="tap-title">Дома и квартиры</div>
+                    <div class="numspisok">
+                        <ul>
+                            <li>Прихожии</li>
+                            <li>Гостинные</li>
+                            <li>Кухни</li>
+                            <li>Ванные комнаты</li>
+                            <li>Винные</li>
+                            <li>Детские</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tap">
+                    <div class="icon1"><img src="img/main/screen7/Bussines_icon.svg" alt=""></div>
+                    <div class="tap-title">Бизнес</div>
+                    <div class="numspisok">
+                        <ul>
+                            <li>Магазины</li>
+                            <li>Банки</li>
+                            <li>Рестораны</li>
+                            <li>Салоны</li>
+                            <li>Офисы и кабинеты</li>
+                            <li>Гостиницы</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tap">
+                    <div class="icon1"><img src="img/main/screen7/Interior_icon.svg" alt=""></div>
+                    <div class="tap-title">Интерьер</div>
+                    <div class="numspisok">
+                        <ul>
+                            <li>Стеновые панели</li>
+                            <li>Потолочные панели</li>
+                            <li>Кухни</li>
+                            <li>Порталы</li>
+                            <li>Обкладка дверных проемов</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="screen10">
+            <div class="footer-content">
+                <div class="footer-block">
+                    <div class="logofut">
+                        <img src="img/header/Logo.svg" alt="logo">
+                        <div class="text">Лучшая мебельная фабрика</div>
+                    </div>
+                </div>
+                
+                <div class="footer-block">
+                    <div class="kontakt">
+                        <div class="title">Свяжитесь с нами</div>
+                        <div class="kntkt">
+                            <div class="txt">Владимирская...</div>
+                        </div>
+                        <div class="kntkt">
+                            <div class="txt">+7 (777) 777 77</div>
+                        </div>
+                        <div class="kntkt">
+                            <div class="txt">manufacturing@gmail.com</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer-block">
+                    <div class="infa">
+                        <div class="title">Информация</div>
+                        <div class="work">Наши работы</div>
+                        <div class="delov">Доставка и монтаж</div>
+                        <div class="garant">Гарантии</div>
+                        <div class="ourcommand">Наша команда</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="prava">
+            <div class="pr1">Все права защищены. 2021</div>
+            <div class="name">Владимирская мебельная мануфактура</div>
+        </div>
+        <div class="ssilkiprava">
+            <div class="politika"><a href="#">Политика конфиденциальности</a></div>
+            <div class="uslispl">
+                <a href="#">Условия использования</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="jquery-3.7.1.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

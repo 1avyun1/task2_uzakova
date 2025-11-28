@@ -1,0 +1,1931 @@
+@font-face {
+    font-family: mediumtext;
+    src: url('fonts/Montserrat-Medium.ttf');
+}
+@font-face {
+    font-family: lighttext;
+    src: url('fonts/Montserrat-Light.ttf');
+}
+@font-face {
+    font-family: semiboldtext;
+    src: url('fonts/Montserrat-SemiBold.ttf');
+}
+@font-face {
+    font-family: regulartext;
+    src: url('fonts/Montserrat-Regular.ttf');
+}
+
+body{
+    background: #16191C;
+    color: white;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.modal-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal {
+    background: #2A2D30;
+    padding: 40px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 500px;
+    position: relative;
+}
+
+.modal-close {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 30px;
+    cursor: pointer;
+    color: #FEBC59;
+}
+
+.modal h3 {
+    font-family: mediumtext;
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #FEBC59;
+}
+
+.modal-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.modal-form input,
+.modal-form textarea {
+    padding: 12px;
+    border: 1px solid #747576;
+    border-radius: 5px;
+    background: #16191C;
+    color: white;
+    font-family: regulartext;
+    font-size: 16px;
+}
+
+.modal-form textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+.modal-form button {
+    background: linear-gradient(#FEBC59, #F19C5E);
+    color: #16191C;
+    border: none;
+    padding: 15px;
+    border-radius: 5px;
+    font-family: mediumtext;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.modal-form button:hover {
+    opacity: 0.9;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.mobile-logo {
+    display: none;
+}
+
+.mobile-chair {
+    display: none;
+}
+
+.mobile-submit {
+    display: none;
+}
+
+.mobile-text {
+    display: none;
+}
+
+header .triangl {
+    background: url('img/triangle/1.svg');
+    background-size: cover;
+    width: 473px;
+    height: 1186px;
+}
+
+header .chair {
+    background: url('img/header/chairHeader.svg');
+    background-size: cover;
+    width: 723px;
+    height: 1085px;
+}
+
+header .iformation .img {
+    text-align: center;
+    margin-top: 55px;
+    width: 265px;
+    height: 188px;
+    margin-left: 828px;
+    margin-right: auto;
+}
+
+header .iformation {
+    color: #fff;
+}
+
+header .iformation .title {
+    font-family: mediumtext;
+    font-size: 38px;
+    line-height: 54px;
+    width: 659px;
+    margin-top: 168px;
+    margin-left: 375px;
+}
+
+header .iformation .subtitle {
+    font-family: regulartext;
+    font-size: 26px;
+    line-height: 32px;
+    width: 538px;
+    margin-left: 375px;
+    margin-top: 31px;
+}
+
+header .iformation .strelka {
+    margin-left: 375px;
+    display: flex;
+    margin-top: 83px;
+    width: 569px;
+}
+
+header .iformation .strelka .submit {
+    margin-right: 20px;
+    width: 270px;
+    height: 77px;
+    background: linear-gradient(#FEBC59, #F19C5E);
+    text-align: center;
+    font-family: mediumtext;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+header .iformation .strelka .submit p {
+    margin-top: 28px;
+}
+
+header .iformation .str {
+    margin-left: 580px;
+}
+
+header .iformation .strelka .subtext {
+    margin-top: 30px;
+    font-family: regulartext;
+    font-size: 20px;
+}
+
+main .screen1 .contacts {
+    background: linear-gradient(to right bottom, #747576, #16191C);
+    height: 137px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+main .screen1 .contacts div {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    font-family: regulartext;
+    font-size: 18px;
+}
+
+main .screen1 .contacts .phone,
+main .screen1 .contacts .email,
+main .screen1 .contacts .img,
+main .screen1 .contacts .submit {
+    padding: 0 20px;
+    font-family: mediumtext;
+    font-size: 20px;
+}
+
+main .screen1 .contacts .phone,
+main .screen1 .contacts .email {
+    border-right: 2px solid #747576;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+main .screen1 .contacts .img {
+    border-right: none;
+}
+
+main .screen1 .contacts .submit {
+    background: linear-gradient(#FEBC59, #F19C5E);
+    border-radius: 10px;
+    height: 77px;
+    display: flex;
+    width: 270px;
+    align-items: center;
+    justify-content: center;
+    padding: 0 25px;
+    font-family: mediumtext;
+    cursor: pointer;
+}
+
+main .screen1 .contacts .submit p {
+    margin: 0;
+    color: #fff;
+    font-size: 18px;
+}
+
+main .screen1 .contacts .img img {
+    vertical-align: middle;
+}
+
+main .screen2and3 {
+    position: relative;
+    padding: 50px 0;
+}
+
+main .screen2and3 .img {
+    background: url('img/triangle/2.svg');
+    background-size: contain;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 126px;
+    height: 210px;
+}
+
+main .screen2and3 .title {
+    font-family: mediumtext;
+    font-size: 42px;
+    text-align: center;
+    margin-bottom: 75px;
+    margin-top: 163px;
+}
+
+main .screen2and3 .text {
+    position: absolute;
+    right: 50px;
+    width: 309px;
+    font-size: 20px;
+    font-family: mediumtext;
+    margin-right: 358px;
+    margin-top: 60px;
+    line-height: 34px;
+}
+
+/* Десктопный слайдер */
+.slider-container {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.slider-track {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    width: 100%;
+    height: 574px;
+    position: relative;
+}
+
+.slide {
+    position: absolute;
+    transition: all 0.5s ease-in-out;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.slide.small-left {
+    width: 307px;
+    height: 220px;
+    left: 0;
+    opacity: 0.7;
+}
+
+.slide.main {
+    width: 814px;
+    height: 574px;
+    left: 347px;
+    z-index: 2;
+    opacity: 1;
+}
+
+.slide.small-right {
+    width: 307px;
+    height: 220px;
+    opacity: 0.7;
+}
+
+.slide.right-1 {
+    left: 1201px;
+}
+
+.slide.right-2 {
+    left: 1548px;
+}
+
+.slide:not(.active) {
+    opacity: 0.7;
+}
+
+.slide.active {
+    opacity: 1;
+}
+
+.slider-controls {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.slider-btn {
+    background: white;
+    border: none;
+    color: black;
+    width: 60px;
+    height: 60px;
+    border-radius: 10%;
+    font-size: 24px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 80px;
+}
+
+.slider-btn:hover {
+    background: linear-gradient(#FEBC59, #F19C5E);
+}
+
+.slider-container .create {
+    text-align: center;
+    margin-top: 30px;
+    font-family: mediumtext;
+    font-size: 24px;
+    color: #FEBC59;
+}
+
+main .screen2and3 .slider,
+main .screen2and3 .slider img,
+main .screen2and3 .slider .kitch1 {
+    display: none;
+}
+
+main .screen2and3 .create {
+    display: none;
+}
+
+main .screen4 {
+    position: relative;
+    margin-top: 100px;
+    padding: 0 20px;
+}
+
+main .screen4 .triangl{
+    background: url('img/triangle/3.svg');
+    background-size: cover;
+    width: 317px;
+    height: 342px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+main .screen4 .title{
+    text-align: center;
+    width: 668px;
+    margin: 0 auto;
+    font-family: mediumtext;
+    font-size: 42px;
+    margin-top: 0;
+    padding-top: 20px;
+}
+
+main .screen4 .otdel{
+    font-family: lighttext;
+    font-size: 30px;
+    line-height: 18px;
+    margin-top: 82px;
+    margin-left: 413px;
+}
+
+main .screen4 .otdeli{
+    display: flex;
+    font-family: regulartext;
+    font-size: 18px;
+    line-height: 32px;
+    text-align: center;
+    margin-left:375px ;
+    margin-top:41px ;
+    gap: 50px;
+}
+
+main .screen4 .otdeli .proizv,
+main .screen4 .otdeli .client{
+    width: 251px;
+    height: 59px;
+}
+
+main .screen4 .otdeli .proizv{
+    background:#FEBC59;
+    height: 59px;
+    display: flex;
+    width: 251px;
+    align-items: center;
+    border-radius: 5px;
+    justify-content: center;
+    padding: 0 20px;
+    font-family: regulartext;
+    color: #16191C;
+}
+
+main .screen4 .otdeli .client{
+    border: #464747 0.5px solid;
+    height: 59px;
+    display: flex;
+    width: 251px;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+    font-family: regulartext;
+    border-radius: 5px;
+}
+
+main .screen4 .ourparty {
+    display: flex;
+    gap: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+main .screen4 .ourparty .slider{
+    display: flex;
+    gap: 30px;
+}
+
+main .screen4 .ourparty .slider .img1{
+    background: url('img/main/screen2/men1.svg');
+    width: 278px;
+    height: 359px;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    padding: 20px;
+    box-sizing: border-box;
+    color: white;
+    font-family: regulartext;
+    font-size: 16px;
+}
+
+main .screen4 .ourparty .slider .img2{
+    background: url('img/main/screen2/pila2.svg');
+    width: 278px;
+    height: 359px;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    padding: 20px;
+    box-sizing: border-box;
+    color: white;
+    font-family: regulartext;
+    font-size: 16px;
+}
+
+main .screen4 .ourparty .slider .img3{
+    background: url('img/main/screen2/men2.svg');
+    width: 278px;
+    height: 359px;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    padding: 20px;
+    box-sizing: border-box;
+    color: white;
+    font-family: regulartext;
+    font-size: 16px;
+}
+
+main .screen4 .ourparty .slider .img4{
+    background: url('img/main/screen2/pila1.svg');
+    width: 278px;
+    height: 359px;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    padding: 20px;
+    box-sizing: border-box;
+    color: white;
+    font-family: regulartext;
+    font-size: 16px;
+}
+main .screen4 .ourparty .slider .img5{
+    background: url('img/main/screen2/pila3.svg');
+    width: 278px;
+    height: 359px;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    padding: 20px;
+    box-sizing: border-box;
+    color: white;
+    font-family: regulartext;
+    font-size: 16px;
+}
+
+main .screen4 .ourparty .slider .img1 div,
+main .screen4 .ourparty .slider .img2 div,
+main .screen4 .ourparty .slider .img3 div,
+main .screen4 .ourparty .slider .img4 div,
+main .screen4 .ourparty .slider .img5 div
+{
+    background-color: rgba(116, 119, 118, 0.8);
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+main .screen4 .otdel span{
+    color: #FEBC59;
+}
+
+main .screen4 .ourcomand .comand{
+    font-family: lighttext;
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+
+main .screen4 .ourcomand .comand span{
+    color: #FEBC59;
+}
+
+main .screen4 .ourcomand .text{
+    font-family: mediumtext;
+    font-size: 20px;
+    line-height: 32px;
+    width: 426px;
+}
+
+main .screen4 .ourparty .two {
+    align-items: right;
+    justify-content: right;
+    margin-left: 520px;
+}
+
+main .screen4 .buttonstrelki {
+    display: flex;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+main .screen4 .tuda,
+main .screen4 .suda {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #464747;
+    cursor: pointer;
+}
+
+main .screen4 .elips {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: #FEBC59;
+    position: absolute;
+}
+
+main .screen4 .triangl2,
+main .screen4 .triangl3 {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: #464747;
+}
+
+main .screen5{
+    display: flex;
+    align-items: center;
+    background: url('img/main/screen3/backgr.svg');
+    padding: 50px 0;
+}
+
+main .screen5 .male{
+    position: relative;
+    padding-left: 229px;
+}
+
+main .screen5 .male .fio{
+    position: absolute;
+}
+
+main .screen5 .text .title{
+    font-family: mediumtext;
+    font-size: 42px;
+    border-bottom: #FEBC59 2px solid ;
+    padding-bottom: 45px;
+}
+
+main .screen5 .text .kachvowork{
+    font-family:mediumtext ;
+    font-size: 20px;
+    line-height: 36px;
+    color: #FEBC59;
+    margin-top: 22px;
+}
+
+main .screen5 .text .subtext{
+    font-family: mediumtext;
+    font-size: 24px;
+    line-height: 36px;
+    width: 514px;
+    margin-top: 62px;
+}
+
+main .screen5 .text .naznachitvstr
+{
+    margin-top: 74px;
+    background: linear-gradient(#FEBC59, #F19C5E);
+    border-radius: 10px;
+    height: 77px;
+    display: flex;
+    width: 270px;
+    align-items: center;
+    justify-content: center;
+    padding: 0 25px;
+    font-family: mediumtext;
+}
+
+main .screen6 .title{
+    font-family: mediumtext;
+    font-size: 42px;
+    line-height: 54px;
+    width: 730px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+main .screen6 .box{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 1169px;
+    height: 440px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+main .screen6 .plsui {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    width: 500px;
+    height: 370px;
+    background: linear-gradient(135deg, #747576, #16191C);
+    padding: 30px;
+}
+
+main .screen6 .plsui-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+main .screen6 .plsui-item img {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+}
+
+main .screen6 .plsui-item .text {
+    font-family: mediumtext;
+    font-size: 20px;
+    color: white;
+    margin: 0;
+}
+
+main .screen6 .gridwood {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    width: 670px;
+    height: 440px;
+}
+
+main .screen6 .gridwood .grid-item {
+    position: relative;
+    width: 223px;
+    height: 220px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+main .screen6 .gridwood .grid-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(254, 188, 89, 0.3);
+}
+
+main .screen6 .gridwood .image-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+main .screen6 .gridwood .image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+main .screen6 .gridwood .grid-item:hover .image-container img {
+    transform: scale(1.1);
+}
+
+main .screen6 .gridwood .material-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(70, 71, 71, 0.9);
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+}
+
+main .screen6 .gridwood .material-name {
+    font-family: regulartext;
+    font-size: 18px;
+    color: white;
+    margin: 0;
+    text-align: center;
+}
+
+main .screen7 .title {
+    font-family: mediumtext;
+    font-size: 42px;
+    line-height: 54px;
+    width: 862px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 180px;
+    padding: 50px 0;
+}
+
+main .screen7 .block {
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    width: 100%;
+}
+
+main .screen7 .block.r {
+    justify-content: flex-start;
+}
+
+main .screen7 .block.r .text {
+    margin-right: 50px;
+    margin-left: 200px;
+    box-sizing: border-box;
+}
+
+main .screen7 .block.r .img {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+main .screen7 .block.r .img img {
+    width: 929px;
+    height: 355px;
+    object-fit: cover;
+    margin-right: 0;
+}
+
+main .screen7 .block.l {
+    justify-content: flex-end;
+}
+
+main .screen7 .block.l .img {
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+main .screen7 .block.l .img img {
+    width: 929px;
+    height: 355px;
+    object-fit: cover;
+    margin-left: 0;
+}
+
+main .screen7 .block.l .text {
+    margin-left: 50px;
+    margin-right: 200px;
+    box-sizing: border-box;
+}
+
+main .screen7 .block .titlesub {
+    font-family: lighttext;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+main .screen7 .block .titlesub span {
+    color: #FEBC59;
+}
+
+main .screen7 .block .text {
+    font-family: mediumtext;
+    font-size: 20px;
+    line-height: 32px;
+    width: 100%;
+}
+
+main .screen8 {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+main .screen8 .title {
+    font-family: mediumtext;
+    font-size: 42px;
+    line-height: 54px;
+    width: 862px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+main .screen8 .partners-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    margin-top: 50px;
+}
+
+main .screen8 .partner-line {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 70px;
+}
+
+main .screen8 .partner-item {
+    display: flex;
+    align-items: center;
+}
+
+main .screen8 .partner-item:not(:last-child)::after {
+    content: '';
+    width: 2px;
+    height: 52px;
+    background-color: #FEBC59;
+    margin-left: 70px;
+}
+
+main .screen8 .partner-item img {
+    max-width: 100%;
+    height: auto;
+    filter: brightness(0) invert(1);
+}
+
+main .screen9 {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+main .screen9 .title1 {
+    font-family: mediumtext;
+    font-size: 42px;
+    line-height: 54px;
+    width: 862px;
+    margin: 0 auto 80px;
+    text-align: center;
+}
+
+main .screen9 .kartochki {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding: 20px 0;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+main .screen9 .tap {
+    width: 370px;
+    height: 540px;
+    background: #2A2D30;
+    padding: 40px 30px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    box-sizing: border-box;
+    flex-shrink: 0;
+}
+
+main .screen9 .tap:hover {
+    background: linear-gradient(#FEBC59, #F19C5E);
+}
+
+main .screen9 .tap:hover .tap-title,
+main .screen9 .tap:hover .numspisok ul li {
+    color: #16191C;
+}
+
+main .screen9 .icon1 {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+main .screen9 .icon1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+main .screen9 .tap-title {
+    font-family: semiboldtext;
+    font-size: 30px;
+    color: #FEBC59;
+    margin-bottom: 30px;
+    text-align: left;
+    transition: all 0.3s ease;
+}
+
+main .screen9 .numspisok {
+    width: 100%;
+    flex-grow: 1;
+    display: flex;
+    align-items: flex-start;
+}
+
+main .screen9 .numspisok ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+    width: 100%;
+}
+
+main .screen9 .numspisok ul li {
+    font-family: mediumtext;
+    font-size: 20px;
+    color: white;
+    padding: 15px 0;
+    position: relative;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+}
+
+main .screen9 .numspisok ul li:last-child {
+    border-bottom: none;
+}
+
+main .screen9 .numspisok ul li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 3px;
+    width: 16px;
+    background: #FEBC59;
+    border-radius: 1px;
+}
+
+main .screen9 .tap:hover .numspisok ul li::before {
+    background: #16191C;
+}
+
+main .screen9 .numspisok ul li {
+    padding-left: 25px;
+}
+
+main .screen10 {
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+main .screen10 .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    width: 100%;
+    gap: 40px;
+}
+
+main .screen10 .footer-block {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+}
+
+main .screen10 .logofut {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+main .screen10 .logofut img {
+    width: 200px;
+    height: auto;
+}
+
+main .screen10 .logofut .text {
+    font-family: lighttext;
+    font-size: 18px;
+    color: white;
+}
+
+main .screen10 .kontakt {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    gap: 20px;
+}
+
+main .screen10 .kontakt .title {
+    font-family: semiboldtext;
+    font-size: 20px;
+    color: #FEBC59;
+    margin-bottom: 10px;
+}
+
+main .screen10 .kntkt {
+    margin-bottom: 8px;
+}
+
+main .screen10 .kntkt .txt {
+    font-family: regulartext;
+    font-size: 16px;
+    color: white;
+}
+
+main .screen10 .infa {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+main .screen10 .infa .title {
+    font-family: semiboldtext;
+    font-size: 20px;
+    color: #FEBC59;
+    margin-bottom: 10px;
+}
+
+main .screen10 .infa .work,
+main .screen10 .infa .delov,
+main .screen10 .infa .garant,
+main .screen10 .infa .ourcommand {
+    font-family: regulartext;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+main .screen10 .infa .work:hover,
+main .screen10 .infa .delov:hover,
+main .screen10 .infa .garant:hover,
+main .screen10 .infa .ourcommand:hover {
+    color: #FEBC59;
+}
+
+footer {
+    background: #16191C;
+    padding: 20px 0;
+    position: relative;
+}
+
+footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-color: #747576;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+footer .prava {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+footer .prava .pr1,
+footer .prava .name {
+    font-family: regulartext;
+    font-size: 14px;
+    color: white;
+    margin: 0;
+}
+
+footer .ssilkiprava {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+footer .ssilkiprava a {
+    color: #FEBC59;
+    text-decoration: none;
+    font-family: regulartext;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+footer .ssilkiprava a:hover {
+    color: #F19C5E;
+    text-decoration: underline;
+}
+
+/* Мобильная версия */
+@media (max-width: 375px) {
+    body {
+        overflow-x: hidden;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        font-size: 12px;
+    }
+    
+    * {
+        box-sizing: border-box;
+        max-width: 100%;
+    }
+
+    .modal {
+        padding: 20px;
+        width: 95%;
+    }
+
+    .modal h3 {
+        font-size: 20px;
+    }
+
+    .modal-form input,
+    .modal-form textarea {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    header {
+        display: block;
+        padding: 15px;
+        width: 100%;
+        text-align: center;
+    }
+    
+    header .triangl,
+    header .chair,
+    .desktop-logo,
+    header .iformation,
+    header .iformation .str,
+    header .iformation .strelka .subtext {
+        display: none;
+    }
+    
+    .mobile-logo {
+        display: block;
+        text-align: center;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+    
+    .mobile-logo img {
+        width: 130px;
+        height: 92px;
+    }
+    
+    .mobile-chair {
+        display: block;
+        text-align: center;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+    
+    .mobile-chair img {
+        width: 257px;
+        height: 386px;
+    }
+    
+    .mobile-text {
+        display: block;
+        text-align: center;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+    
+    .mobile-text .title {
+        font-family: mediumtext;
+        font-size: 20px;
+        line-height: 26px;
+        width: 100%;
+        margin: 0 auto 15px;
+        text-align: center;
+    }
+    
+    .mobile-text .subtitle {
+        font-family: regulartext;
+        font-size: 16px;
+        line-height: 20px;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    
+    .mobile-submit {
+        display: block;
+        width: 200px;
+        height: 45px;
+        background: linear-gradient(#FEBC59, #F19C5E);
+        border-radius: 8px;
+        text-align: center;
+        margin: 0 auto;
+        font-family: mediumtext;
+        font-size: 14px;
+        line-height: 45px;
+        cursor: pointer;
+    }
+    
+    main .screen1 {
+        display: none;
+    }
+    
+    main .screen2and3,
+    main .screen4,
+    main .screen5,
+    main .screen6,
+    main .screen7,
+    main .screen8,
+    main .screen9,
+    main .screen10 {
+        padding: 20px 15px;
+        margin-top: 30px;
+        width: 100%;
+    }
+    
+    /* Исправленный мобильный слайдер */
+    .slider-container {
+        width: 100%;
+        margin: 20px 0;
+        padding: 0;
+        overflow: hidden;
+    }
+    
+    .slider-track {
+        display: flex;
+        flex-direction: row;
+        overflow-x: auto;
+        gap: 15px;
+        padding: 10px 0;
+        justify-content: flex-start;
+        align-items: center;
+        height: auto;
+        margin-top: 20px;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+        position: relative;
+        width: 100%;
+    }
+    
+    .slider-track::-webkit-scrollbar {
+        display: none;
+    }
+    
+    .slide {
+        position: relative !important;
+        width: 280px !important;
+        height: 200px !important;
+        flex-shrink: 0;
+        opacity: 1 !important;
+        display: block !important;
+        left: auto !important;
+        right: auto !important;
+        transform: none !important;
+        border-radius: 8px;
+        overflow: hidden;
+    }
+    
+    /* Убираем все десктопные классы для мобильной версии */
+    .slide.small-left,
+    .slide.main,
+    .slide.small-right,
+    .slide.right-1,
+    .slide.right-2 {
+        position: relative !important;
+        width: 280px !important;
+        height: 200px !important;
+        left: auto !important;
+        right: auto !important;
+        opacity: 1 !important;
+        z-index: 1 !important;
+    }
+    
+    .slide.active {
+        opacity: 1 !important;
+    }
+    
+    .slide img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+    }
+    
+    .slider-controls {
+        display: none;
+    }
+    
+    .slider-container .create {
+        font-size: 16px;
+        margin-top: 15px;
+        text-align: center;
+    }
+    
+    main .screen2and3 .img,
+    main .screen2and3 .text {
+        display: none;
+    }
+    
+    main .screen2and3 .title {
+        font-size: 18px;
+        margin: 0 auto 20px;
+        width: 100%;
+        text-align: center;
+        line-height: 24px;
+    }
+    
+    main .screen4 .triangl {
+        display: none;
+    }
+    
+    main .screen4 .title {
+        font-size: 18px;
+        width: 100%;
+        line-height: 24px;
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 15px;
+        padding: 0 0 15px 0;
+    }
+    
+    main .screen4 .otdel {
+        font-size: 16px;
+        margin: 15px auto;
+        text-align: center;
+        width: 100%;
+    }
+    
+    main .screen4 .otdeli {
+        flex-direction: column;
+        margin: 15px auto;
+        gap: 8px;
+        width: 100%;
+        align-items: center;
+    }
+    
+    main .screen4 .otdeli .proizv,
+    main .screen4 .otdeli .client {
+        width: 100%;
+        max-width: 280px;
+        height: 40px;
+        font-size: 12px;
+    }
+    
+    main .screen4 .ourparty {
+        flex-direction: column;
+        gap: 20px;
+        margin: 20px 0;
+        width: 100%;
+    }
+    
+    main .screen4 .ourparty .slider {
+        display: flex;
+        flex-direction: row;
+        overflow-x: auto;
+        gap: 15px;
+        padding: 10px 0;
+        width: 100%;
+    }
+    
+    main .screen4 .ourparty .slider .img1,
+    main .screen4 .ourparty .slider .img2,
+    main .screen4 .ourparty .slider .img3,
+    main .screen4 .ourparty .slider .img4,
+    main .screen4 .ourparty .slider .img5 {
+        width: 220px;
+        height: 150px;
+        flex-shrink: 0;
+        background-size: cover;
+    }
+    
+    main .screen4 .ourcomand .comand {
+        font-size: 16px;
+        text-align: center;
+        margin-bottom: 15px;
+        width: 100%;
+    }
+    
+    main .screen4 .ourcomand .text {
+        width: 100%;
+        font-size: 12px;
+        line-height: 16px;
+        text-align: center;
+    }
+    
+    main .screen4 .ourparty .two {
+        margin-left: 0;
+    }
+    
+    main .screen5 {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    main .screen5 .male {
+        display: none;
+    }
+    
+    main .screen5 .text .title {
+        font-size: 18px;
+        width: 100%;
+        line-height: 24px;
+        padding-bottom: 15px;
+    }
+    
+    main .screen5 .text .kachvowork {
+        font-size: 14px;
+        margin: 15px 0;
+    }
+    
+    main .screen5 .text .subtext {
+        width: 100%;
+        font-size: 12px;
+        line-height: 16px;
+        margin: 15px 0;
+    }
+    
+    main .screen5 .text .naznachitvstr {
+        margin: 15px auto 0;
+        width: 180px;
+        height: 40px;
+        font-size: 12px;
+    }
+    
+    main .screen6 .title {
+        font-size: 18px;
+        width: 100%;
+        line-height: 24px;
+        padding: 0 0 15px 0;
+    }
+    
+    main .screen6 .box {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        gap: 20px;
+    }
+    
+    main .screen6 .plsui {
+        width: 100%;
+        height: auto;
+        padding: 15px;
+        gap: 12px;
+        background: none;
+    }
+    
+    main .screen6 .plsui-item {
+        gap: 12px;
+    }
+    
+    main .screen6 .plsui-item img {
+        width: 16px;
+        height: 16px;
+    }
+    
+    main .screen6 .plsui-item .text {
+        font-size: 12px;
+        line-height: 16px;
+    }
+    
+    main .screen6 .gridwood {
+        width: 100%;
+        height: auto;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 100px);
+        gap: 5px;
+    }
+    
+    main .screen6 .gridwood .grid-item {
+        width: 100%;
+        height: 100px;
+    }
+    
+    main .screen6 .gridwood .material-overlay {
+        height: 30px;
+        padding: 5px;
+    }
+    
+    main .screen6 .gridwood .material-name {
+        font-size: 12px;
+    }
+    
+    main .screen7 {
+        padding: 20px 0;
+        text-align: center;
+    }
+    
+    main .screen7 .title {
+        font-size: 18px;
+        line-height: 24px;
+        width: 100%;
+        padding: 0 15px 15px 15px;
+        margin: 0 auto 15px;
+        text-align: center;
+    }
+    
+    main .screen7 .block {
+        flex-direction: column;
+        margin-top: 0;
+        width: 100%;
+        padding: 0;
+    }
+    
+    main .screen7 .block.r,
+    main .screen7 .block.l {
+        flex-direction: column;
+        margin-bottom: 20px;
+        width: 100%;
+        padding: 0;
+    }
+    
+    main .screen7 .block.r .text,
+    main .screen7 .block.l .text {
+        margin: 0;
+        padding: 15px;
+        order: 2;
+        width: 100%;
+        text-align: center;
+        box-sizing: border-box;
+    }
+    
+    main .screen7 .block.r .img,
+    main .screen7 .block.l .img {
+        width: 100%;
+        order: 1;
+        padding: 0;
+        margin: 0;
+    }
+    
+    main .screen7 .block.r .img img,
+    main .screen7 .block.l .img img {
+        width: 100%;
+        height: 150px;
+        border-radius: 0;
+        margin: 0;
+    }
+    
+    main .screen7 .block .titlesub {
+        font-size: 16px;
+        text-align: center;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+    
+    main .screen7 .block .text1 {
+        font-size: 12px;
+        line-height: 16px;
+        text-align: center;
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+    main .screen8 .title {
+        font-size: 18px;
+        line-height: 24px;
+        width: 100%;
+        padding: 0 0 15px 0;
+        margin: 0 auto 15px;
+        text-align: center;
+    }
+    
+    main .screen8 .partners-container {
+        flex-direction: row;
+        overflow-x: auto;
+        justify-content: flex-start;
+        padding: 10px 0 20px 0;
+        gap: 30px;
+        margin-top: 20px;
+        width: 100%;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+    }
+    
+    main .screen8 .partners-container::-webkit-scrollbar {
+        display: none;
+    }
+    
+    main .screen8 .partner-line {
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+        flex-shrink: 0;
+    }
+    
+    main .screen8 .partner-line.first-line,
+    main .screen8 .partner-line.second-line {
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+    }
+    
+    main .screen8 .partner-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: auto;
+        height: 60px;
+        flex-shrink: 0;
+    }
+    
+    main .screen8 .partner-item:not(:last-child)::after {
+        display: none;
+    }
+    
+    main .screen8 .partner-item img {
+        max-width: 80px;
+        max-height: 40px;
+        width: auto;
+        height: auto;
+        object-fit: contain;
+        filter: brightness(0) invert(1);
+    }
+    
+    main .screen9 .title1 {
+        font-size: 18px;
+        line-height: 24px;
+        width: 100%;
+        margin: 0 auto 15px;
+        text-align: center;
+    }
+    
+    main .screen9 .kartochki {
+        flex-direction: row;
+        justify-content: flex-start;
+        overflow-x: auto;
+        gap: 15px;
+        padding: 10px 0 20px 0;
+        width: 100%;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+    }
+    
+    main .screen9 .kartochki::-webkit-scrollbar {
+        display: none;
+    }
+    
+    main .screen9 .tap {
+        width: 260px;
+        min-width: 260px;
+        height: auto;
+        padding: 15px;
+        align-items: center;
+        text-align: center;
+        flex-shrink: 0;
+    }
+    
+    main .screen9 .icon1 {
+        width: 45px;
+        height: 45px;
+        margin-bottom: 12px;
+    }
+    
+    main .screen9 .tap-title {
+        text-align: center;
+        font-size: 16px;
+        margin-bottom: 12px;
+        width: 100%;
+    }
+    
+    main .screen9 .numspisok ul {
+        width: 100%;
+    }
+    
+    main .screen9 .numspisok ul li {
+        font-size: 12px;
+        justify-content: center;
+        text-align: center;
+        padding: 6px 0;
+        line-height: 16px;
+    }
+    
+    main .screen9 .numspisok ul li::before {
+        display: none;
+    }
+    
+    main .screen10 .footer-content {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+        align-items: center;
+        width: 100%;
+    }
+    
+    main .screen10 .footer-block {
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+    
+    main .screen10 .logofut {
+        align-items: center;
+        text-align: center;
+        gap: 8px;
+    }
+    
+    main .screen10 .logofut img {
+        width: 110px;
+        margin: 0 auto;
+    }
+    
+    main .screen10 .logofut .text {
+        font-size: 12px;
+        text-align: center;
+        line-height: 16px;
+    }
+    
+    main .screen10 .kontakt {
+        align-items: center;
+        text-align: center;
+        gap: 12px;
+        width: 100%;
+    }
+    
+    main .screen10 .kontakt .title {
+        font-size: 14px;
+        margin-bottom: 8px;
+        text-align: center;
+    }
+    
+    main .screen10 .kntkt {
+        margin-bottom: 4px;
+        text-align: center;
+    }
+    
+    main .screen10 .kntkt .txt {
+        font-size: 12px;
+        text-align: center;
+        line-height: 16px;
+    }
+    
+    main .screen10 .infa {
+        align-items: center;
+        text-align: center;
+        gap: 10px;
+        width: 100%;
+    }
+    
+    main .screen10 .infa .title {
+        font-size: 14px;
+        margin-bottom: 8px;
+        text-align: center;
+    }
+    
+    main .screen10 .infa .work,
+    main .screen10 .infa .delov,
+    main .screen10 .infa .garant,
+    main .screen10 .infa .ourcommand {
+        font-size: 12px;
+        text-align: center;
+        line-height: 16px;
+    }
+    
+    footer {
+        flex-direction: column;
+        text-align: center;
+        padding: 15px;
+        gap: 12px;
+        width: 100%;
+    }
+    
+    footer .prava {
+        text-align: center;
+        gap: 6px;
+        width: 100%;
+    }
+    
+    footer .prava .pr1,
+    footer .prava .name {
+        font-size: 10px;
+        line-height: 14px;
+        text-align: center;
+    }
+    
+    footer .ssilkiprava {
+        flex-direction: column;
+        gap: 8px;
+        width: 100%;
+    }
+    
+    footer .ssilkiprava a {
+        font-size: 10px;
+        text-align: center;
+    }
+    
+    [class*="margin"],
+    [style*="margin"] {
+        margin: 0;
+    }
+    
+    [class*="padding"],
+    [style*="padding"] {
+        padding: 0;
+    }
+    
+    [class*="width"],
+    [style*="width"] {
+        width: 100%;
+        max-width: 100%;
+    }
+    
+    [class*="left"],
+    [class*="right"] {
+        position: static;
+    }
+}
